@@ -1,0 +1,25 @@
+project/
+├── static/                  # Archivos estáticos (CSS, JS, imágenes)
+│   ├── css/
+│   │   └── styles.css       # Archivo principal de estilos
+│   ├── js/
+│   │   └── script.js        # Archivo principal de JavaScript
+│   └── images/              # Imágenes utilizadas en el proyecto
+│       └── logo.png         # Logo o imágenes adicionales
+├── templates/               # Plantillas HTML para Flask
+│   ├── base.html            # Plantilla base HTML
+│   ├── index.html           # Página principal
+│   └── about.html           # Ejemplo de otra página
+├── app/
+│   ├── __init__.py          # Inicialización del paquete Flask
+│   ├── routes.py            # Rutas y lógica de las vistas
+│   ├── models.py            # (Vacío por ahora, preparado para la base de datos)
+│   └── utils.py             # Funciones auxiliares (opcional)
+├── data/                    # Carpeta para almacenamiento temporal (JSON o archivos)
+│   └── sample_data.json     # Archivo JSON de ejemplo
+├── tests/                   # Pruebas del proyecto
+│   └── test_routes.py       # Pruebas para las rutas de Flask
+├── .gitignore               # Archivos y carpetas a ignorar por Git
+├── requirements.txt         # Dependencias del proyecto (Flask, Flask-Cors, etc.)
+├── config.py                # Configuración del proyecto
+└── app.py                   # Punto de entrada principal de Flask

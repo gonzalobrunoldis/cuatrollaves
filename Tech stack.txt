@@ -1,0 +1,20 @@
+### **Frontend**
+1. **HTML/CSS/JavaScript** (para simplicidad y control total del diseño).
+2. Framework opcional: **TailwindCSS** (para acelerar la creación de estilos).
+
+### **Backend**
+1. **Python** con **Flask** (un framework ligero que permite escalar fácilmente).
+2. Librerías adicionales:
+   - **Flask-Cors** (para manejar políticas de CORS, en caso de usar frontend separado).
+   - **Flask-SQLAlchemy** (opcional, preparado para futuras integraciones con bases de datos).
+   
+### **Hosting**
+1. **Render** o **Railway** para hosting gratuito y simple (soportan tanto frontend como backend).
+2. **GitHub Pages** (para el frontend si es estático).
+
+### **API y Almacenamiento (opcional)**
+1. **JSON Files** como almacenamiento temporal en lugar de una base de datos.
+2. Preparación para integrar una base de datos como **SQLite** o **PostgreSQL** más adelante.
+
+Tener en cuenta en el desarrollo que posiblemente se implemente supabase como base de datos a futuro, así que organizar 
+los archivos para que exista esa posibilidad.

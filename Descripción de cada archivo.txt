@@ -1,0 +1,117 @@
+### **1. `static/`**
+
+#### **`css/styles.css`**
+- Contiene los estilos básicos del sitio web.
+- Ejemplo de contenido:
+  - Estilo para el cuerpo de la página.
+  - Clases para la navegación, botones y formularios.
+
+#### **`js/script.js`**
+- Archivo JavaScript principal.
+- Funciones básicas como:
+  - Validación de formularios.
+  - Interacción con el backend a través de llamadas AJAX o Fetch API.
+
+#### **`images/`**
+- Carpeta para imágenes como el logo del proyecto o cualquier otro recurso visual.
+
+---
+
+### **2. `templates/`**
+
+#### **`base.html`**
+- Plantilla base con estructura reutilizable.
+- Contiene:
+  - Un bloque `header` y `footer`.
+  - Un bloque `{% block content %}` para el contenido dinámico.
+
+#### **`index.html`**
+- Página principal.
+- Hereda de `base.html` y sobrescribe el bloque `content`.
+- Puede mostrar un mensaje de bienvenida o información general.
+
+#### **`about.html`**
+- Página de ejemplo (opcional).
+- Puede contener información sobre el proyecto o el equipo.
+
+---
+
+### **3. `app/`**
+
+#### **`__init__.py`**
+- Inicializa la aplicación Flask.
+- Contenido:
+  - Configuración básica de Flask (e.g., app, blueprints).
+  - Importa rutas desde `routes.py`.
+
+#### **`routes.py`**
+- Define las rutas y su lógica.
+- Ejemplo de rutas:
+  - `/` para la página de inicio.
+  - `/about` para la página de ejemplo.
+
+#### **`models.py`**
+- Preparado para la futura integración con una base de datos.
+- Ejemplo:
+  - Define modelos usando SQLAlchemy o Pydantic (si es necesario).
+
+#### **`utils.py`**
+- Funciones auxiliares.
+- Ejemplo de funciones:
+  - Lectura y escritura en archivos JSON.
+  - Generación de datos dinámicos para las plantillas.
+
+---
+
+### **4. `data/`**
+
+#### **`sample_data.json`**
+- Archivo JSON de ejemplo.
+- Contenido inicial:
+  ```json
+  {
+    "example": "This is a placeholder for sample data."
+  }
+  ```
+
+---
+
+### **5. `tests/`**
+
+#### **`test_routes.py`**
+- Pruebas unitarias para las rutas.
+- Ejemplo:
+  - Pruebas para verificar que las rutas principales devuelven los códigos de estado esperados.
+
+---
+
+### **6. Archivos en la raíz**
+
+#### **`.gitignore`**
+- Archivos y carpetas a ignorar en Git.
+- Ejemplo de contenido:
+  ```
+  __pycache__/
+  instance/
+  .env
+  .vscode/
+  ```
+
+#### **`requirements.txt`**
+- Dependencias del proyecto.
+- Ejemplo:
+  ```
+  Flask
+  Flask-Cors
+  ```
+
+#### **`config.py`**
+- Configuración de la aplicación Flask.
+- Ejemplo:
+  - Configuración para el modo de desarrollo o producción.
+
+#### **`app.py`**
+- Punto de entrada principal.
+- Contenido:
+  - Importa e inicializa la app desde `app/`.
+  - Incluye configuración para el servidor (e.g., debug mode).

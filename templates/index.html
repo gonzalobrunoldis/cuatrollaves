@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="inicio" class="section bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-wrap items-center">
+            <div class="w-full lg:w-1/2 fade-in">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    Maximiza tus ingresos con <span class="text-airbnb-red">ArgenBnB</span>
+                </h1>
+                <p class="text-xl text-airbnb-light mb-8">
+                    Gestión profesional de propiedades en alquiler temporal. Optimiza tu rendimiento en Airbnb sin preocupaciones.
+                </p>
+                <a href="#contacto" class="btn-primary inline-block">Comienza Ahora</a>
+            </div>
+            <div class="w-full lg:w-1/2 mt-12 lg:mt-0 fade-in">
+                <img src="{{ url_for('static', filename='images/hero-image.jpg') }}" alt="Propiedad de lujo" class="rounded-lg shadow-xl">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="servicios" class="section">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Nuestros Servicios</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="card p-6 bg-white fade-in">
+                <div class="text-airbnb-red text-4xl mb-4">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">Gestión Integral</h3>
+                <p class="text-airbnb-light">
+                    Nos encargamos de todo: desde la publicación hasta la limpieza y mantenimiento de tu propiedad.
+                </p>
+            </div>
+            <div class="card p-6 bg-white fade-in">
+                <div class="text-airbnb-red text-4xl mb-4">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">Optimización de Precios</h3>
+                <p class="text-airbnb-light">
+                    Algoritmos inteligentes para maximizar tus ingresos según la demanda del mercado.
+                </p>
+            </div>
+            <div class="card p-6 bg-white fade-in">
+                <div class="text-airbnb-red text-4xl mb-4">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">Atención 24/7</h3>
+                <p class="text-airbnb-light">
+                    Soporte continuo para tus huéspedes y resolución inmediata de incidencias.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits Section -->
+<section id="beneficios" class="section bg-gray-50">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">¿Por qué elegirnos?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="fade-in">
+                <h3 class="text-2xl font-semibold mb-6">Maximiza tus Ingresos</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="text-airbnb-red mr-2">✓</span>
+                        <span>Incremento promedio del 40% en ingresos mensuales</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-airbnb-red mr-2">✓</span>
+                        <span>Optimización continua de precios según demanda</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-airbnb-red mr-2">✓</span>
+                        <span>Mayor ocupación y mejores reseñas</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="fade-in">
+                <h3 class="text-2xl font-semibold mb-6">Gestión Sin Preocupaciones</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="text-airbnb-red mr-2">✓</span>
+                        <span>Limpieza profesional garantizada</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-airbnb-red mr-2">✓</span>
+                        <span>Mantenimiento preventivo y correctivo</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-airbnb-red mr-2">✓</span>
+                        <span>Reportes mensuales detallados</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonios" class="section">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Lo que dicen nuestros clientes</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="testimonial fade-in">
+                <p class="mb-4">"Desde que trabajo con LimaBnB, mis ingresos se han duplicado y ya no tengo que preocuparme por nada. ¡Excelente servicio!"</p>
+                <p class="testimonial-author">María García</p>
+                <p class="text-airbnb-light">Propietaria en Miraflores</p>
+            </div>
+            <div class="testimonial fade-in">
+                <p class="mb-4">"La mejor decisión que tomé fue confiar en LimaBnB. Su gestión profesional ha superado todas mis expectativas."</p>
+                <p class="testimonial-author">Carlos Rodríguez</p>
+                <p class="text-airbnb-light">Propietario en Barranco</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contacto" class="section bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="max-w-lg mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Comienza Ahora</h2>
+            <form class="space-y-6 fade-in">
+                <div>
+                    <label class="block text-airbnb-dark mb-2" for="nombre">Nombre</label>
+                    <input type="text" id="nombre" class="form-input" required>
+                </div>
+                <div>
+                    <label class="block text-airbnb-dark mb-2" for="email">Email</label>
+                    <input type="email" id="email" class="form-input" required>
+                </div>
+                <div>
+                    <label class="block text-airbnb-dark mb-2" for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" class="form-input" required>
+                </div>
+                <div>
+                    <label class="block text-airbnb-dark mb-2" for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" rows="4" class="form-input" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary w-full">Enviar Mensaje</button>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %} 

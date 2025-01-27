@@ -1,0 +1,135 @@
+:root {
+    --airbnb-red: #FF385C;
+    --airbnb-dark: #222222;
+    --airbnb-light: #717171;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 4rem;
+}
+
+/* Navigation styles */
+.nav-link {
+    color: var(--airbnb-dark);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--airbnb-red);
+}
+
+.mobile-nav-link {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: var(--airbnb-dark);
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.mobile-nav-link:hover {
+    background-color: #f3f4f6;
+    color: var(--airbnb-red);
+}
+
+/* Section styles */
+.section {
+    padding: 5rem 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: var(--airbnb-red);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #E31C5F;
+}
+
+/* Card styles */
+.card {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+/* Text colors */
+.text-airbnb-red {
+    color: var(--airbnb-red);
+}
+
+.text-airbnb-dark {
+    color: var(--airbnb-dark);
+}
+
+.text-airbnb-light {
+    color: var(--airbnb-light);
+}
+
+/* Background colors */
+.bg-airbnb-red {
+    background-color: var(--airbnb-red);
+}
+
+/* Animation classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Form styles */
+.form-input {
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: var(--airbnb-red);
+    outline: none;
+}
+
+/* Testimonial styles */
+.testimonial {
+    background-color: #f7f7f7;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+.testimonial-author {
+    font-weight: 600;
+    color: var(--airbnb-dark);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section {
+        padding: 3rem 0;
+    }
+} 

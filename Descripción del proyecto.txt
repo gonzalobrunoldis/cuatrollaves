@@ -1,0 +1,68 @@
+### **Temática del Proyecto**
+
+La página será una plataforma para **gestión de propiedades en alquiler temporal**, específicamente optimizada para propietarios que utilizan plataformas como **Airbnb**. El objetivo principal es ofrecer una interfaz simple y funcional donde los propietarios puedan entender cómo **Limabnb** puede optimizar la gestión de sus propiedades, aumentando su rentabilidad y mejorando la experiencia de los huéspedes.
+
+---
+
+### **Propósito**
+
+El sitio web tiene como misión:
+1. **Informar a los propietarios:** Mostrar los servicios ofrecidos, beneficios y garantías al trabajar con Limabnb.
+2. **Facilitar contacto:** Ofrecer un canal directo para que los interesados puedan solicitar más información o registrarse.
+3. **Generar confianza:** A través de testimonios, simuladores de ingresos y contenido educativo.
+4. **Escalabilidad futura:** Preparar la plataforma para integrar bases de datos y funcionalidades dinámicas como cuentas de usuario o paneles de control.
+
+---
+
+### **Características Principales**
+
+1. **Página de Inicio:**
+   - Introducción clara a los servicios ofrecidos.
+   - Información de valor para captar a propietarios interesados.
+
+2. **Servicios:**
+   - Explicación detallada de cada servicio, como gestión integral, precios dinámicos, limpieza profesional, etc.
+
+3. **Testimonios:**
+   - Comentarios de clientes previos para generar confianza.
+
+4. **Simulador de Ingresos:**
+   - Herramienta simple que permite a los propietarios estimar los ingresos potenciales según la ubicación y características de su propiedad (esta funcionalidad puede estar "dummy" inicialmente, pero con preparación para integración futura).
+
+5. **Sección de FAQ:**
+   - Respuestas a las preguntas más frecuentes de los propietarios interesados.
+
+6. **Formulario de Contacto:**
+   - Permitir que los visitantes envíen consultas directamente.
+
+---
+
+### **Usuarios Objetivo**
+
+- **Propietarios de inmuebles** que buscan rentabilizar sus propiedades mediante alquileres temporales.
+- Personas interesadas en delegar la gestión de su propiedad a expertos.
+
+---
+
+### **Relevancia del Diseño y Desarrollo**
+
+1. **Simples pero Escalable:**
+   - La estructura del proyecto permite comenzar con una funcionalidad básica, pero con preparación para integrar bases de datos y paneles más complejos en el futuro.
+   
+2. **Preparación para APIs:**
+   - Aunque inicialmente no se planea una base de datos, las rutas y funciones están diseñadas para interactuar fácilmente con datos dinámicos y API en caso de ser necesario.
+
+3. **Optimización para Marketing:**
+   - La página estará optimizada para SEO, incluyendo metadatos adecuados, títulos descriptivos y contenido que atraiga tráfico orgánico.
+
+4. **Multidispositivo:**
+   - Diseño responsivo para que funcione perfectamente en móviles, tabletas y escritorios.
+
+---
+
+### **Tecnologías Relacionadas al Proyecto**
+
+El proyecto tiene relación con áreas como:
+- **Gestión de Propiedades:** Automatización y simplificación de procesos.
+- **Marketing Digital:** Presentación clara de servicios para captación de clientes.
+- **Tecnología Escalable:** Preparación para integrar sistemas más complejos a medida que crezca el negocio.
