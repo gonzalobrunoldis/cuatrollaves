@@ -2,20 +2,20 @@
 
 {% block content %}
 <!-- Hero Section -->
-<section id="inicio" class="section bg-gray-50">
-    <div class="container mx-auto px-6">
-        <div class="flex flex-wrap items-center">
+<section id="inicio" class="hero-section">
+    <div class="location-tag">Miramar - Argentina</div>
+    <img src="{{ url_for('static', filename='images/miramar1.jpeg') }}" alt="Miramar property" class="hero-image">
+    <div class="hero-overlay"></div>
+    <div class="container mx-auto px-6 relative z-10">
+        <div class="flex flex-wrap items-center min-h-screen">
             <div class="w-full lg:w-1/2 fade-in">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-white">
                     Maximiza tus ingresos con <span class="text-airbnb-red">ArgenBnB</span>
                 </h1>
-                <p class="text-xl text-airbnb-light mb-8">
+                <p class="text-xl text-white mb-8">
                     Gestión profesional de propiedades en alquiler temporal. Optimiza tu rendimiento en Airbnb sin preocupaciones.
                 </p>
                 <a href="#contacto" class="btn-primary inline-block">Comienza Ahora</a>
-            </div>
-            <div class="w-full lg:w-1/2 mt-12 lg:mt-0 fade-in">
-                <img src="{{ url_for('static', filename='images/hero-image.jpg') }}" alt="Propiedad de lujo" class="rounded-lg shadow-xl">
             </div>
         </div>
     </div>
